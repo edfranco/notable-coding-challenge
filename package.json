@@ -1,0 +1,14 @@
+{
+  "name": "notable-code-challenge",
+  "version": "1.0.0",
+  "description": "coding challange for interview process with Notable",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Franco edfranco415@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
