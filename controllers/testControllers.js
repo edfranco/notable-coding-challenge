@@ -23,7 +23,15 @@ const createTest = (req, res) => {
     });
 };
 
+const deleteTest = (req, res) => {
+    db.Test.findByIdAndDelete(req.params.id, (error, deletedTest) => {
+        if (error) return res.status(500).json({ status: 500, message: 'Could not delete' });
+        console.log('Yay we deleted the test');
+    });
+};
+
 module.exports = {
     createTest,
-    showTests
+    showTests,
+    deleteTest
 }
