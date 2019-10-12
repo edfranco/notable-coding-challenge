@@ -12,5 +12,6 @@ mongoose.connect(DB_URL, {
 
 module.exports = {
     Test: require('./Test'),
-    Doctor: require('./Doctor')
+    Doctor: require('./Doctor'),
+    Appointment: require('./Appointment')
 };

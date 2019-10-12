@@ -1,4 +1,5 @@
 module.exports = {
     test: require('./testControllers'),
-    doctors: require('./doctorsControllers')
+    doctors: require('./doctorsControllers'),
+    appointments: require('./appointmentsControllers')
 }

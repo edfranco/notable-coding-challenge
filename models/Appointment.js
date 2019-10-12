@@ -8,12 +8,28 @@ const AppointmentSchema = new Schema({
     patient_last_name: {
         type: String,
     },
-    time_of_appt: {
+    date: {
         type: String
     },
+    time: {
+        type: String
+    },
+    date_and_time: {
+        type: String,
+        default: `${this.date} ${this.time}`
+    },
+    kind: {
+        type: String,
+        default: 'New Patient'
+    },
+    // all appointments belong to a doctor
+    doctor: {
+        type: Schema.Types.ObjectId,
+        ref: 'Doctor'
+    }
 
 });
 
-const Appointment = mongoose.model('Doctor', AppointmentSchema);
+const Appointment = mongoose.model('Appointment', AppointmentSchema);
 
 module.exports = Appointment;

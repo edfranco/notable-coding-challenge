@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const ctrl = require('../controllers');
 
-// endpoint api/doctors
-router.get('/', ctrl.doctors.indexDoctors);
-router.get('/:id', ctrl.doctors.showDoctorCalendar)
+// endpoint api/appointments
+router.get('/:date', ctrl.appointments.showAppointmentsThisDay);
+
 
 
 module.exports = router;

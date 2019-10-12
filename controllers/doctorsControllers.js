@@ -1,7 +1,7 @@
 const db = require('../models');
 
 // shows all doctors
-const show = (req, res) => {
+const indexDoctors = (req, res) => {
     db.Doctor.find({}, (error, allDoctors) => {
         if (error) return res.status(500).json({
             status: 500,
@@ -24,11 +24,13 @@ const showDoctorCalendar = (req, res) => {
         res.status(200).json({
             status: 200,
             data: foundDoctor.appointments
-        })
-    })
-}
+        });
+    });
+};
+
+
 
 module.exports = {
-    show,
+    indexDoctors,
     showDoctorCalendar
 }
