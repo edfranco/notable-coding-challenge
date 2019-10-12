@@ -28,8 +28,6 @@ const showDoctorCalendar = (req, res) => {
     });
 };
 
-
-
 module.exports = {
     indexDoctors,
     showDoctorCalendar

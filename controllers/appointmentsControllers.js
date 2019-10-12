@@ -57,6 +57,7 @@ const deleteAppointment = (req, res) => {
             status: 500,
             message: 'Could not delete appointment'
         });
+        // checks if the logged in doctor id is the same as the appointment's doctor id
         if (req.params.doctorId !== deletedAppt.doctor._id) {
             return res.status(500).json({
                 status: 401,
