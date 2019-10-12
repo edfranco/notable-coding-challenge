@@ -27,3 +27,5 @@ nodemon
 `
 
 Afterwards you will want to create some test database models using a tool such as [Postman](https://www.getpostman.com/) or [Insomnia](https://insomnia.rest/) with JSON in the body for POST requests.
+
+Also note, MongoDB automotically creates a unique ID for each new model created
