@@ -26,4 +26,4 @@ The second terminal will be running the node server using the command
 nodemon
 `
 
-Afterwards you will want to create some test database models using a tool such as Postman[https://www.getpostman.com/] or Insomnia with JSON in the body for POST[https://insomnia.rest/] requests.
+Afterwards you will want to create some test database models using a tool such as [Postman](https://www.getpostman.com/) or Insomnia with JSON in the body for [POST](https://insomnia.rest/) requests.
