@@ -1,3 +1,4 @@
 module.exports = {
-    test: require('./testRoute')
+    test: require('./testRoute'),
+    doctors: require('./doctorsRoutes')
 }

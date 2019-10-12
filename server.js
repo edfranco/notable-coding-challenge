@@ -15,5 +15,6 @@ app.use(cors(corsOptions));
 
 // routes
 app.use(`/api/test`, routes.test);
+app.use(`/api/doctors`, routes.doctors);
 
 app.listen(4000, console.log('server is live at port 4000'));

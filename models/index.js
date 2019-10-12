@@ -11,5 +11,6 @@ mongoose.connect(DB_URL, {
     .catch(() => console.log('MongoDB is not connected'));
 
 module.exports = {
-    Test: require('./Test')
+    Test: require('./Test'),
+    Doctor: require('./Doctor')
 };
