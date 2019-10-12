@@ -57,6 +57,12 @@ const deleteAppointment = (req, res) => {
             status: 500,
             message: 'Could not delete appointment'
         });
+        if (req.params.doctorId !== deletedAppt.doctor._id) {
+            return res.status(500).json({
+                status: 401,
+                message: 'Unauthorized to delete'
+            });
+        }
         res.status(200).json({
             status: 200,
             message: 'Succesfully deleted appointment'
