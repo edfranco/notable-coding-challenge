@@ -4,7 +4,7 @@
 First you will want to clone this repo in your terminal
 
 `
-git clone http://something.git [your-optional-directory-name here]
+git clone https://github.com/edfranco/notable-coding-challenge.git [your-optional-directory-name here]
 `
 
 Seondly you will want to change you terminal directory to your new cloned repo directory. Then you will want to 
